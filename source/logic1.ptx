@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-statements-connectives" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statements and Connectives</title>
+
+  <p>
+    Symbolic logic studies some parts and relationships of natural language by representing
+    them with symbols. The main ingredients of symbolic logic are <term>statements</term>
+    and <term>connectives</term>.
+  </p>
+<definition xml:id="def-Statement">
+  <statement>
+  <p>
+    A <term>statement</term> is an assertion that can be either true or false, but not both.
+  </p>
+  </statement>
+</definition>
+
+
+  <example xml:id="example-statements">
+    <title>Statements and Non-Statements</title>
+    <p>The following sentences are statements:</p>
+    <ul>
+      <li>It is sunny today.</li>
+      <li>Ms. W. will have a broader audience next month.</li>
+      <li>I did not join the club.</li>
+    </ul>
+    <p>
+      Questions (for example, “How’s the weather?”), interjections (for example, “Cool!”),
+      and incomplete sentences (for example, “If I could …”) are not considered to be
+      statements unless rephrased appropriately.
+    </p>
+  </example>
+
+  <p>
+    <term>Simple statements</term> do not contain other statements as parts.
+    All of the examples above are simple statements.
+    We typically represent simple statements using lowercase letters
+    <m>p, q, r, \ldots</m>.
+  </p>
+
+  <example xml:id="example-simple-statements">
+    <title>Symbolic Representation of Simple Statements</title>
+    <p>
+      Let
+      <m>s</m> represent “Your bicycle is slick,” and
+      <m>c</m> represent “I like its color.”
+    </p>
+  </example>
+<definition xml:id="def-">
+  <statement>
+    <p>
+          <term>Connectives</term> join simple statements into more complex statements,
+    called <term>compound statements</term>.
+    The most common connectives and their symbols are:
+   </p>
+
+  <ul>
+    <li><term>and</term>, <term>but</term>: <m>\land</m></li>
+    <li><term>or</term>: <m>\lor</m></li>
+    <li><term>if … then</term>: <m>\to</m></li>
+  </ul>
+  
+  </statement>
+</definition>
+  
+
+
+  <example xml:id="example-conjunction">
+    <title>Conjunction</title>
+    <p>
+      “Your bicycle is slick and I like its color” is written symbolically as
+      <m>s \land c</m>.
+    </p>
+  </example>
+
+  <p>
+    The operation <term>not</term>, written <m>\lnot</m>, turns a single statement into
+    its negation. It is not a connective.
+  </p>
+
+  <p>
+    The symbols representing statements, connectives, and negation form our
+    <term>logical dictionary</term>. Parentheses are used for punctuation.
+  </p>
+
+  <example xml:id="example-logical-operations">
+    <title>Statements and Their Logical Forms</title>
+    <ul>
+      <li><m>p:\hspace{1cm}</m> <m>p</m> is true (assertion)</li>
+      <li><m>\lnot p:\hspace{1cm}</m> <m>p</m> is false (negation)</li>
+      <li><m>p \land q:\hspace{1cm}</m> <m>p</m> and <m>q</m> (conjunction)</li>
+      <li><m>p \lor q:\hspace{1cm}</m> either <m>p</m> or <m>q</m>, or both (disjunction)</li>
+      <li><m>p \to q:\hspace{1cm}</m> if <m>p</m> then <m>q</m> (conditional)</li>
+    </ul>
+  </example>
+
+  <p>
+    The connective <term>or</term> has an <term>inclusive</term> meaning in logic.
+    For example, “Bob will play tennis or go to the movies” means that Bob may do
+    one, the other, or both.
+  </p>
+
+  <p>
+    The connective <term>but</term> plays the same logical role as <term>and</term>
+    and is represented by the same symbol <m>\land</m>.
+    For example, “Your bicycle is slick, but I don’t like its color” is written as
+    <m>s \land \lnot c</m>.
+  </p>
+
+  <p>
+    The use of parentheses is essential and requires careful attention.
+    Consider the following compound statement:
+  </p>
+
+  <example xml:id="example-parentheses">
+    <title>The Role of Parentheses</title>
+    <p>
+      If I do a web search for pages containing the terms “termites” or “cattle,”
+      then I will search for pages containing “global warming.”
+    </p>
+
+    <p>
+      Define the simple statements:
+    </p>
+
+    <ul>
+      <li><m>t</m>: I search for pages containing “termites.”</li>
+      <li><m>c</m>: I search for pages containing “cattle.”</li>
+      <li><m>g</m>: I search for pages containing “global warming.”</li>
+    </ul>
+
+    <p>
+      The symbolic form of the compound statement is
+      <m>(t \lor c) \to g</m>.
+    </p>
+
+    <p>
+      Without parentheses, the expression <m>t \lor c \to g</m> would represent a
+      different and unintended meaning.
+    </p>
+  </example>
+
+
+
+  <exercise xml:id="ex-english-to-symbolic">
+    <title>Convert English Statements into Symbols</title>
+
+    <statement>
+      <p>
+        Convert each compound statement into a symbolic statement. For each part,
+        assign symbols to each simple statement (for example,
+        <m>f</m> = “my favorite dish has lots of anchovies”), then use the appropriate
+        connectives (<m>\land</m>, <m>\lor</m>, <m>\lnot</m>, <m>\to</m>).
+      </p>
+    </statement>
+
+    <task xml:id="ex-english-to-symbolic-a">
+      <statement>
+        <p> Jim is a lawyer, yet he is not a crook.</p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-b">
+      <statement>
+        <p> Although our professor is young, he is knowledgeable.</p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-c">
+      <statement>
+        <p>
+           My favorite dish has lots of anchovies or is not spicy and also it comes in a large portion.
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-d">
+      <statement>
+        <p>
+           My favorite dish has lots of anchovies and it comes in a large portion or it is spicy and it also comes in a large portion.
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-e">
+      <statement>
+        <p>
+           If you do not attend class, then either you read a book or you will not pass the exam.
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-f">
+      <statement>
+        <p>
+           I am doing a web search for pages containing the terms “global warming”, but not for pages containing both “termites” and “cattle”.
+        </p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-english-to-symbolic-g">
+      <statement>
+        <p>
+         I am doing a web search for pages containing the terms “global warming”, but not for pages containing the word “termites” and not for pages containing the word “cattle”.
+        </p>
+      </statement>
+    </task>
+
+  </exercise>
+
+
+  <exercise xml:id="ex-symbolic-to-english">
+    <title>Convert Symbols into Words</title>
+
+    <statement>
+      <p>
+        Convert each symbolic statement into words, given:
+        <m>s</m> = The sunroof is extra,
+        <m>r</m> = The radial tires are included,
+        <m>w</m> = Power windows are optional.
+      </p>
+    </statement>
+
+    <task xml:id="ex-symbolic-to-english-a">
+      <statement>
+        <p> <m>(s \land w) \to r</m>.</p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-symbolic-to-english-b">
+      <statement>
+        <p> <m>r \land \bigl(s \lor (\lnot w)\bigr)</m>.</p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-symbolic-to-english-c">
+      <statement>
+        <p> <m>(\lnot r) \to \bigl((\lnot s) \lor (\lnot w)\bigr)</m>.</p>
+      </statement>
+    </task>
+
+    <task xml:id="ex-symbolic-to-english-d">
+      <statement>
+        <p> <m>\lnot(w \land s)</m>.</p>
+      </statement>
+    </task>
+
+  </exercise>
+
+</section>
+

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section id="sec-basic-elements-election">
+  <title>The Basic Elements of an Election</title>
+  <p>This section introduces the foundational components of voting theory and the mathematics of elections, focusing on how votes are cast and how outcomes are determined.</p>
+  <p>An election consists of candidates, voters, ballots, and a voting method. Candidates may represent people or abstract choices, voters are participants with a say in the outcome, and ballots record voter preferences.</p>
+  <p>Ballots may be single-choice ballots, preference ballots ranking all candidates, or truncated preference ballots ranking only some candidates.</p>
+  <p>The outcome of an election may be a single winner, a partial ranking, or a full ranking of candidates. The voting method determines how ballots are tabulated and how ties are resolved.</p>
+  <p>Different voting methods can produce different outcomes, making the choice of method the most complex and important part of an election.</p>
+  <p>The Math Club election example illustrates preference ballots with four candidates and demonstrates how ballots are grouped into a preference schedule.</p>
+  <p>Questions about the election include determining the number of voters, the majority threshold, and identifying candidates with fewest last-place votes.</p>
+  <p>Finally, the section discusses strategies for handling ties, including runoffs, head-to-head comparisons, or random selection.</p>
+</section>

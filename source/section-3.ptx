@@ -1,47 +1,45 @@
-<section xml:id="section-learning-outcomes">
-  <title>What are the learning outcomes of MATH 103?</title>
-<p> </p>
-  <subsection xml:id="subsection-prerequisites">
-    <title>Prerequisites</title>
-    <p>Math 101 or placement</p>
-  </subsection>
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-course-requirements" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>What do we require for this course?</title>
+<p>
+  <ul>
+    <li>
+      We will mostly follow the textbook
+      <url href="https://cofc.bncollege.com/course-material-listing-page?utm_campaign=storeId=65075_langId=-1_courseData=MATH_103_10_202410&amp;utm_source=wcs&amp;utm_medium=registration_integration">
+        <term>Excursions in Modern Mathematics</term>
+      </url>,
+      by Peter Tannenbaum, 10th edition.
+    </li>
 
-  <subsection xml:id="subsection-course-description">
-    <title>Course Description</title>
-    <p>
-      This course is designed for students who are not planning to take more advanced mathematics courses
-      and are interested in learning about the central role of Mathematics in the modern world.
-      The course will help students develop analytical skills and the ability to read and write
-      expositions of mathematical ideas suitable for a well-educated non-expert reader.
-      A wide range of topics will be discussed, including logic, voting theory and fair division,
-      graphs and networks, and symmetry in art and nature.
-    </p>
-  </subsection>
+    <li>
+      We also use <term>Set Theory and Logic</term> by A. Calini, E. Jurisich, and S. Shields,
+      available in OAKS.
+    </li>
 
-  <subsection xml:id="subsection-general-education-outcomes">
-    <title>General Education Student Learning Outcomes</title>
-    <p>
-      Students are expected to display a thorough understanding of the topics covered. In particular,
-      upon completion of the course, students will be able to:
-    </p>
-    <paragraphs>
-      <ul>
-        <li>Model phenomena in mathematical terms.</li>
-        <li>Solve problems using these models.</li>
-        <li>Demonstrate an understanding of the supporting theory behind the models apart from any particular application.</li>
-      </ul>
-    </paragraphs>
-  </subsection>
+    <li>
+      We require a reasonable laptop, microphone, webcam, and internet access.
+      CofC provided laptop suggestions at
+      <url href="https://it.cofc.edu/laptops/">this link</url>.
+    </li>
 
-  <subsection xml:id="subsection-course-specific-outcomes">
-    <title>Course Specific Student Learning Outcomes</title>
-    <paragraphs>
-      <ul>
-        <li>Translate English expressions into expressions of Propositional Logic to determine the relation between a complex sentence and its parts in a systematic and unambiguous way.</li>
-        <li>Employ methods of Propositional Logic, including truth tables, to determine under what conditions statements are true or false, and when logical arguments are valid or invalid.</li>
-        <li>Use basic logic, algebra, counting techniques, and combinatorics to solve problems arising in a variety of contemporary application areas, that may include social sciences, management science, finance, and art.</li>
-      </ul>
-    </paragraphs>
-    <p>These outcomes will be assessed on the tests and quizzes.</p>
-  </subsection>
+    <li>
+      We require you to create a Gradescope account to see feedback for tests.
+      More details will be posted after the first test.
+      Please refrain from creating an account until you receive the link and instructions.
+    </li>
+  </ul>
+</p>
+<figure>
+<image source="frog.jpg" width="50%">
+    <shortdescription>Five crocodiles partially submerged.</shortdescription>
+    <caption>
+        <p>
+            Five crocodiles are in a pond. Three of them have their eyes above
+            the water line, looking in the direction of the camera. The other
+            two are in the background and only their tails are visible above
+            the water line.
+        </p>
+      </caption>
+  </figure>
+
 </section>

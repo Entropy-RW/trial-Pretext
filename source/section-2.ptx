@@ -1,20 +1,137 @@
-<section xml:id="section-lecture-meetings">
-  <title>Where and when do we meet for lectures?</title>
+<?xml version='1.0' encoding='UTF-8'?>
+<section id="sec-basic-elements-election">
+  <title>The Basic Elements of an Election</title>
+  <subsection>
+    <title>Section 1.1: The Basic Elements of an Election</title>
+  </subsection>
+  <subsection>
+    <title>Group Work: Popular movies?</title>
+    <p>Create a voting system:
+ How we cast votes 
+ How we decide the outcome</p>
+    <figure>
+      <image source="img_1.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+    <figure>
+      <image source="img_2.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+    <figure>
+      <image source="img_3.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+    <figure>
+      <image source="img_4.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+    <figure>
+      <image source="img_5.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+    <figure>
+      <image source="img_6.png"/>
+      <caption>Group Work: Popular movies?</caption>
+    </figure>
+  </subsection>
+  <subsection>
+    <title>Voting Theory</title>
+    <p>The mathematics of elections
+First half is voting – how we cast our vote
+Second half is counting – how we decide the outcome</p>
+  </subsection>
+  <subsection>
+    <title>The Paradoxes of Democracy</title>
+    <p>The paradox is that the more opportunities we have to vote, the less we seem to appreciate and understand the meaning of voting.
+Why should we vote?
+Does our vote really count?
+How does it count?</p>
+  </subsection>
+  <subsection>
+    <title>The Elements of an Election (1 of 2)</title>
+    <p>Candidates – can be people, places, movies, pizza toppings, etc.
+Voters – people with a say in the outcome
+Ballots – means of expressing your vote
+Single choice – pick one!
+Preference ballot – rank all candidates
+Truncated preference ballot – rank a specific number of candidates</p>
+  </subsection>
+  <subsection>
+    <title>The Elements of an Election (2 of 2)</title>
+    <p>Outcome
+Winner only
+Partial ranking
+Full ranking
+Voting method – how we tabulate the ballots to produce an outcome; how we handle a tie
+Most complicated part of the election 
+Must be agreed upon ahead of time as different methods may produce different outcomes</p>
+  </subsection>
+  <subsection>
+    <title>Example-The Math Club Election (1 of 5)</title>
+    <p>Holding its annual election for president.
+four candidates: Alisha, Boris, Carmen, and Dave (A, B, C, and D for short). 
+Each member of the club is eligible to vote. 
+the vote takes the form of a preference ballot.
+Each voter is asked to rank each of the four candidates in order of preference.</p>
+  </subsection>
+  <subsection>
+    <title>Example-The Math Club Election (2 of 5)</title>
+    <p>37 voters:
+ Preference ballots submitted are shown here.</p>
+  </subsection>
+  <subsection>
+    <title>Example-The Math Club Election (3 of 5)</title>
+  </subsection>
+  <subsection>
+    <title>Properties of Preference Ballots</title>
+    <p>A candidate in a higher position is always preferred over a candidate in a lower position.
 
-  <p>
-    As of now, our lectures are in person. However, please keep in mind that
-    changes in the COVID pandemic could impact our teaching. In particular,
-    we may have to switch to hybrid or online modes.
-  </p>
-
- 
-   <ul> 
-      <li>
-        The class meets on Tuesdays and Thursdays from 12:15 PM to 1:30 PM.
-      </li>
-      <li>
-        The classroom is Robert Scott Small Building 252.
-      </li>
-   </ul>
-
+Relative preferences do not change 
+if one of the candidates withdraws</p>
+    <figure>
+      <image source="img_7.png"/>
+      <caption>Properties of Preference Ballots</caption>
+    </figure>
+  </subsection>
+  <subsection>
+    <title>Example-The Math Club Election (4 of 5)</title>
+    <p>Ballots with the same ordering of candidates are then grouped together.</p>
+    <figure>
+      <image source="img_8.png"/>
+      <caption>Example-The Math Club Election (4 of 5)</caption>
+    </figure>
+  </subsection>
+  <subsection>
+    <title>Example-The Math Club Election (5 of 5) </title>
+    <p>Preference Schedule of Math Club Election</p>
+  </subsection>
+  <subsection>
+    <title>Group Work</title>
+    <p>(a)  How many students voted in this election? 
+(b)  How many first-place votes are needed for a majority? 
+(c)  Which candidate had the fewest last-place votes?</p>
+    <figure>
+      <image source="img_9.png"/>
+      <caption>Group Work</caption>
+    </figure>
+  </subsection>
+  <subsection>
+    <title>Group Work</title>
+    <p>(a)  How many students voted in this election? 1160
+(b)  How many first-place votes are needed for a majority? 581
+(c)  Which candidate had the fewest last-place votes?  A</p>
+    <figure>
+      <image source="img_10.png"/>
+      <caption>Group Work</caption>
+    </figure>
+  </subsection>
+  <subsection>
+    <title>What should we do with Ties?</title>
+    <p>Possibilities:
+allow it to stand, having more than one winner,
+have a run-off election,
+award the win to the candidate with fewer last-place votes,
+determine the head-to-head winner between the tying candidates,
+flip a coin!</p>
+  </subsection>
 </section>

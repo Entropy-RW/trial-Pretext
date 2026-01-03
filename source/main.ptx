@@ -13,20 +13,8 @@
     <title>MATH 103: Spring 2026</title>
 
     <xi:include href="./frontmatter.ptx" />
-    
-    <xi:include href="./introduction.ptx" />
-    <xi:include href="./section-1.ptx" />
-    <xi:include href="./section-2.ptx" />
-    <xi:include href="./section-3.ptx" />
-    <xi:include href="./section-4.ptx" />
-    <xi:include href="./section-5.ptx" />
-    <xi:include href="./section-6.ptx" />
-    <xi:include href="./section-7.ptx" />
-    <xi:include href="./section-8.ptx" />
-    <xi:include href="./section-9.ptx" />
-    <xi:include href="./section-10.ptx" />
-    <xi:include href="./section-11.ptx" />
-    <xi:include href="./section-12.ptx" />
+    <xi:include href="./logic1.ptx" />
+   
   </article>
 
 </pretext>

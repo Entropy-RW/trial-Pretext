@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-last-lecture-review" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Logic</title>
+  <p>
+    <ul>
+      <li>
+        <term>Statements</term>: A statement is an assertion that can be either true or false (but not both).
+        
+       <example>
+        <p>
+        I enjoy reading and running. 
+        </p>
+       </example>
+
+       <example>
+        <p>
+        4+5=9.
+        </p>
+       </example>
+       Non-examples include questions, commands,
+        and open sentences such as <m>x+5=9</m>. :contentReference[oaicite:0]{index=0}
+      </li>
+
+      <li>
+        <term>Simple statements</term> do not contain other statements as parts. We use lowercase letters
+        (<m>p,q,r,s,\ldots</m>) to represent simple statements (for example, <m>p</m> = “I enjoy reading” and
+        <m>q</m> = “I enjoy running”). :contentReference[oaicite:1]{index=1}
+      </li>
+
+      <li>
+        <term>Connectives</term> combine simple statements into compound statements (for example, conjunction “and”
+        and disjunction “or”), using standard logical symbols. :contentReference[oaicite:2]{index=2}
+      </li>
+
+      <li>
+        <term>Translating</term> between English and symbols: for instance, assigning symbols to statements
+        (like <m>s</m>, <m>r</m>, <m>w</m>) and writing an “if … then …” statement symbolically. :contentReference[oaicite:3]{index=3}
+      </li>
+
+      <li>
+        <term>Negation</term> (<m>\lnot</m>) reverses a statement’s truth value and is not a connective.
+        Example: if <m>p</m> is “I enjoy running,” then <m>\lnot p</m> is “I don’t enjoy running.” :contentReference[oaicite:4]{index=4}
+      </li>
+
+      <li>
+        <term>Truth tables</term> summarize all possible truth values of a statement. Negation reverses truth values.
+        The conjunction rule: <m>p\land q</m> is true only when both <m>p</m> and <m>q</m> are true.
+        The disjunction rule: <m>p\lor q</m> is false only when both <m>p</m> and <m>q</m> are false (inclusive “or”). :contentReference[oaicite:5]{index=5}
+      </li>
+
+      <li>
+        <term>Conditional statements</term> have the form <m>p\to q</m>, where <m>p</m> is the antecedent and <m>q</m>
+        is the consequent. A conditional is false only when <m>p</m> is true and <m>q</m> is false. :contentReference[oaicite:6]{index=6}
+      </li>
+
+      <li>
+        <term>Logical equivalence</term>: two statements are logically equivalent when their truth tables are identical,
+        for example <m>p</m> and <m>\lnot(\lnot p)</m>. :contentReference[oaicite:7]{index=7}
+      </li>
+
+      <li>
+        <term>De Morgan’s Laws</term>:
+        <m>\lnot(p\land q)\equiv (\lnot p)\lor(\lnot q)</m> and
+        <m>\lnot(p\lor q)\equiv (\lnot p)\land(\lnot q)</m>. :contentReference[oaicite:8]{index=8}
+      </li>
+
+      <li>
+        <term>Negating a conditional</term>:
+        the negation of “if <m>p</m> then <m>q</m>” is “<m>p</m> and not <m>q</m>,” i.e. <m>p\land \lnot q</m>. :contentReference[oaicite:9]{index=9}
+      </li>
+
+      <li>
+        <term>Related conditionals</term>: the converse, inverse, and contrapositive of a conditional, and the key fact
+        that a conditional is logically equivalent to its contrapositive. :contentReference[oaicite:10]{index=10}
+      </li>
+
+      <li>
+        <term>Logical arguments</term>: an argument is premises followed by a conclusion; it is valid if whenever the premises
+        are true, the conclusion must be true. :contentReference[oaicite:11]{index=11}
+      </li>
+
+      <li>
+        <term>Quantifiers</term>: universal quantifiers (all, every, no one) and existential quantifiers (some, there exists),
+        with examples. :contentReference[oaicite:12]{index=12}
+      </li>
+
+      <li>
+        <term>Set theory</term>: a set is a collection of objects (elements), with membership notation such as
+        “<m>x\in S</m>.” :contentReference[oaicite:13]{index=13}
+      </li>
+    </ul>
+  </p>
+
+</section>
