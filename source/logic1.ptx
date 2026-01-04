@@ -1,6 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<section xml:id="section-statements-connectives" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<section xml:id="section-statements-connectives">
   <title>Statements and Connectives</title>
+<objectives xml:id="obj-statements">
+  <title>Goals for This Section</title>
+  <ol>
+    <li>
+      Define simple and compound <term>statements</term>.
+    </li>
+    <li>
+    Learn fundamental connectives, <term>conjunction, disjunction,</term> and <term>condition</term>.
+    </li>
+    <li>
+      Learn how to negate statements involving conjunctions, disjunctions, and conditionals.
+    </li>
+  </ol>
+</objectives>
 
   <p>
     Symbolic logic studies some parts and relationships of natural language by representing

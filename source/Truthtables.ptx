@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:id="section-course-requirements" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Truth Tables</title>
+<objectives xml:id="obj-ttable">
+  <title>Goals for This Section</title>
+  <ol>
+    <li>
+      Learn how to construct truth tables for statements.
+    </li>
+    <li>
+    Learn <term>tautologies </term> and <term>contradictions</term>.
+    </li>
+
+  </ol>
+</objectives>
 
 <p>
   Each statement is True <term>T</term> or False <term>F</term>

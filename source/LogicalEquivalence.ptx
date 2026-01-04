@@ -1,0 +1,725 @@
+<section xml:id="sec-logical-equivalence">
+    <title>Logical Equivalences</title>
+    <objectives xml:id="obj-logical-equivalences">
+  <title>Goals for This Section</title>
+  <ol>
+    <li>
+      Define <term>logical equivalence</term> and use truth tables to determine whether
+      two statements are logically equivalent.
+    </li>
+    <li>
+      Apply common equivalence laws, including <term>De Morgan’s Laws </term> and the
+      double-negation law, to rewrite statements more simply.
+    </li>
+    <li>
+      Learn how to negate statements involving conjunctions, disjunctions, and conditionals.
+    </li>
+  </ol>
+</objectives>
+
+<definition xml:id="def-lequivalence">
+    <statement>
+<p>
+  Two statements are <term>logically equivalent</term> if they have the same truth value
+  for every possible assignment of truth values to their variables. Equivalently, their truth tables have
+  identical final columns. We use <m>\equiv</m> to denote logical equivalence between statements.
+</p>
+
+    </statement>
+</definition>  
+<example xml:id="example-double-negation-equivalence">
+  <title><m> p \equiv \lnot(\lnot p)</m></title>
+
+  <p>
+    The following truth table shows that the statements
+    <m>p</m> and <m>\lnot(\lnot p)</m> always have the same truth value.
+    Therefore, they are logically equivalent,  thus 
+    <me>
+    p \equiv \lnot(\lnot p)
+  </me>
+  </p>
+
+  <table>
+    <title>Truth Table for <m>p</m> and <m>\lnot(\lnot p)</m></title>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell><m>p</m></cell>
+        <cell><m>\lnot p</m></cell>
+        <cell><m>\lnot(\lnot p)</m></cell>
+      </row>
+      <row>
+        <cell>T</cell>
+        <cell>F</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>T</cell>
+        <cell>F</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>
+    Since the columns for <m>p</m> and <m>\lnot(\lnot p)</m> are identical,
+    we conclude that <m>p \equiv \lnot(\lnot p)</m>.
+  </p>
+</example>
+<example xml:id="example-disjunction-commutative">
+  <title><m>p \lor q \equiv q \lor p</m></title>
+
+  <p>
+    The following truth table shows that the statements
+    <m>p \lor q</m> and <m>q \lor p</m> always have the same truth value.
+    Therefore, they are logically equivalent.
+  </p>
+
+  <table>
+    <title>Truth Table for <m>p \lor q</m> and <m>q \lor p</m></title>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell><m>p</m></cell>
+        <cell><m>q</m></cell>
+        <cell><m>p \lor q</m></cell>
+        <cell><m>q \lor p</m></cell>
+      </row>
+      <row>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>T</cell>
+        <cell>F</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+      </row>
+      <row>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+        <cell>F</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>
+    Since the columns for <m>p \lor q</m> and <m>q \lor p</m> are identical,
+    we conclude that <m>p \lor q \equiv q \lor p</m>.
+  </p>
+</example>
+<exercise xml:id="ex-equivalence-implication-disjunction">
+  <title><me>p \to q \equiv (\lnot p)\lor q</me></title>
+
+  <statement>
+    <p>
+      Show that <m>p \to q</m> and <m>(\lnot p)\lor q</m> are logically equivalent.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      We compare the truth values of <m>p \to q</m> and <m>(\lnot p)\lor q</m>
+      for all possible truth values of <m>p</m> and <m>q</m>.
+    </p>
+
+    <table>
+      <title>Truth Table Comparison</title>
+      <tabular halign="center">
+        <row header="yes" bottom="minor">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>\lnot p</m></cell>
+          <cell><m>(\lnot p)\lor q</m></cell>
+          <cell><m>p \to q</m></cell>
+        </row>
+
+        <row>
+          <cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The columns for <m>p \to q</m> and <m>(\lnot p)\lor q</m> are identical,
+      so the two statements are logically equivalent.
+      Thus, <m>p \to q \equiv (\lnot p)\lor q</m>.
+    </p>
+  </solution>
+</exercise>
+<exercise xml:id="ex-equivalence-conditional-reversal">
+  <title>Logical Equivalence of Conditionals</title>
+
+  <statement>
+    <p>
+      Determine whether the statements <m>p \to q</m> and <m>q \to p</m>
+      are logically equivalent. Justify your answer by constructing a truth table.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      We compare the truth values of <m>p \to q</m> and <m>q \to p</m>
+      for all possible truth values of <m>p</m> and <m>q</m>.
+    </p>
+
+    <table>
+      <title>Truth Table Comparison</title>
+      <tabular halign="center">
+        <row header="yes" bottom="minor">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \to q</m></cell>
+          <cell><m>q \to p</m></cell>
+        </row>
+
+        <row>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+          <cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell>
+          <cell>F</cell>
+          <cell>T</cell>
+          <cell>T</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Since the columns for <m>p \to q</m> and <m>q \to p</m> differ,
+      the two statements are <term>not</term> logically equivalent.
+    </p>
+  </solution>
+</exercise>
+<remark xml:id="remark-demorgan-laws">
+  <title>De Morgan’s Laws</title>
+
+  <p>
+    De Morgan’s Laws describe how negation interacts with conjunction
+    and disjunction. They state that negating a compound statement changes
+    <term>and</term> to <term>or</term>, and <term>or</term> to <term>and</term>,
+    while negating each individual statement.
+  </p>
+
+  <example xml:id="example-demorgan-and">
+    <title>Negation of a Conjunction</title>
+    <p>
+      The statement <m>\lnot(p \land q)</m> is logically equivalent to
+      <m>(\lnot p)\lor(\lnot q)</m>.
+    </p>
+    <md>
+      \lnot(p \land q) \equiv (\lnot p)\lor(\lnot q)
+    </md>
+      <p>
+    We use truth tables to verify this De Morgan’s Law by comparing the truth values
+    of each pair of statements.
+  </p>
+
+
+  <table>
+    <title>Truth Table for <m>\lnot(p \land q)</m> and <m>(\lnot p)\lor(\lnot q)</m></title>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell><m>p</m></cell>
+        <cell><m>q</m></cell>
+        <cell><m>p \land q</m></cell>
+        <cell><m>\lnot(p \land q)</m></cell>
+        <cell><m>\lnot p</m></cell>
+        <cell><m>\lnot q</m></cell>
+        <cell><m>(\lnot p)\lor(\lnot q)</m></cell>
+      </row>
+
+      <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+      <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
+      <row><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell></row>
+      <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+    </tabular>
+  </table>
+
+  <p>
+    The columns for <m>\lnot(p \land q)</m> and <m>(\lnot p)\lor(\lnot q)</m>
+    are identical, so
+    <m>\lnot(p \land q)\equiv(\lnot p)\lor(\lnot q)</m>.
+  </p>
+  </example>
+
+  <example xml:id="example-demorgan-or">
+    <title>Negation of a Disjunction</title>
+    <p>
+      The statement <m>\lnot(p \lor q)</m> is logically equivalent to
+      <m>(\lnot p)\land(\lnot q)</m>.
+    </p>
+    <md>
+      \lnot(p \lor q) \equiv (\lnot p)\land(\lnot q)
+    </md>
+     <table>
+    <title>Truth Table for <m>\lnot(p \lor q)</m> and <m>(\lnot p)\land(\lnot q)</m></title>
+    <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell><m>p</m></cell>
+        <cell><m>q</m></cell>
+        <cell><m>p \lor q</m></cell>
+        <cell><m>\lnot(p \lor q)</m></cell>
+        <cell><m>\lnot p</m></cell>
+        <cell><m>\lnot q</m></cell>
+        <cell><m>(\lnot p)\land(\lnot q)</m></cell>
+      </row>
+
+      <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+      <row><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
+      <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell></row>
+      <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+    </tabular>
+  </table>
+
+  <p>
+    Since the final columns match, we conclude that
+    <m>\lnot(p \lor q)\equiv(\lnot p)\land(\lnot q)</m>.
+  </p>
+  </example>
+
+</remark>
+
+<subsection xml:id="subsec-exercises-logical-equivalence">
+  <title>Exercises</title>
+
+  <p>
+    Determine whether each pair of statements is logically equivalent.  Justify your
+    answer by using truth tables.
+  </p>
+
+  <question xml:id="q-equiv-a">
+    <statement>
+      <p>
+        Determine whether <m>p\lor(p\land q)</m> and <m>p</m> are logically equivalent.
+      </p>
+    </statement>
+    <solution>
+      <table>
+        <title>Truth Table for <m>p\lor(p\land q)</m> and <m>p</m></title>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>p</m></cell>
+            <cell><m>q</m></cell>
+            <cell><m>p\land q</m></cell>
+            <cell><m>p\lor(p\land q)</m></cell>
+            <cell><m>p</m></cell>
+          </row>
+          <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+          <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
+          <row><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+          <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+        </tabular>
+      </table>
+      <p>
+        The final two columns are identical, so <m>p\lor(p\land q)\equiv p</m>.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-equiv-b">
+    <statement>
+      <p>
+        Determine whether <m>\lnot(p\lor q)</m> and <m>(\lnot p)\lor(\lnot q)</m>
+        are logically equivalent.
+      </p>
+    </statement>
+    <solution>
+      <table>
+        <title>Truth Table for <m>\lnot(p\lor q)</m> and <m>(\lnot p)\lor(\lnot q)</m></title>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>p</m></cell>
+            <cell><m>q</m></cell>
+            <cell><m>p\lor q</m></cell>
+            <cell><m>\lnot(p\lor q)</m></cell>
+            <cell><m>\lnot p</m></cell>
+            <cell><m>\lnot q</m></cell>
+            <cell><m>(\lnot p)\lor(\lnot q)</m></cell>
+          </row>
+          <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+          <row><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
+          <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell></row>
+          <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+        </tabular>
+      </table>
+      <p>
+        The columns for <m>\lnot(p\lor q)</m> and <m>(\lnot p)\lor(\lnot q)</m>
+        are <term>not</term>identical, so they are logically equivalent.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-equiv-c">
+    <statement>
+      <p>
+        Determine whether <m>\lnot(p\to q)</m> and <m>(\lnot p)\to(\lnot q)</m>
+        are logically equivalent.
+      </p>
+    </statement>
+    <solution>
+      <table>
+        <title>Truth Table for <m>\lnot(p\to q)</m> and <m>(\lnot p)\to(\lnot q)</m></title>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>p</m></cell>
+            <cell><m>q</m></cell>
+            <cell><m>p\to q</m></cell>
+            <cell><m>\lnot(p\to q)</m></cell>
+            <cell><m>\lnot p</m></cell>
+            <cell><m>\lnot q</m></cell>
+            <cell><m>(\lnot p)\to(\lnot q)</m></cell>
+          </row>
+          <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>T</cell></row>
+          <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell></row>
+          <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell></row>
+          <row><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+        </tabular>
+      </table>
+      <p>
+        The columns for <m>\lnot(p\to q)</m> and <m>(\lnot p)\to(\lnot q)</m> are not identical
+        (for example, when <m>p=F</m> and <m>q=T</m>), so the statements are not logically equivalent.
+      </p>
+    </solution>
+  </question>
+
+</subsection>
+
+<subsection xml:id="subsec-negating-statements">
+  <title>Negating Statements</title>
+
+  <p>
+    Negating a statement means forming a new statement that is true exactly when
+    the original statement is false. For compound statements, negation must be
+    handled carefully.
+  </p>
+
+  <p>
+    In particular, negating conjunctions and disjunctions follows
+    <term>De Morgan’s Laws</term>, which were justified earlier using truth tables.
+    See <xref ref="remark-demorgan-laws"/> for the formal statements.
+  </p>
+
+  <p>
+    Negating conditional statements behaves differently and is a common source of
+    confusion. The difference between a conditional and its reversal was explored
+    in <xref ref="ex-equivalence-conditional-reversal"/>.
+  </p>
+
+  <exercise xml:id="ex-negating-english">
+    <title>Negate the following Statements in English</title>
+
+   
+
+    <task xml:id="task-negate-simple">
+      <statement>
+        <p>We enjoy MATH.</p>
+      </statement>
+      <solution>
+        <p>
+          We do not enjoy MATH.
+        </p>
+      </solution>
+    </task>
+
+    <task xml:id="task-negate-conjunction">
+      <statement>
+        <p>We enjoy MATH and pizza.</p>
+      </statement>
+      <solution>
+        <p>
+          We do not enjoy MATH or we do not enjoy pizza.
+        </p>
+      </solution>
+    </task>
+
+    <task xml:id="task-negate-disjunction">
+      <statement>
+        <p>We enjoy MATH or pizza.</p>
+      </statement>
+      <solution>
+        <p>
+          We do not enjoy MATH and we do not enjoy pizza.
+        </p>
+      </solution>
+    </task>
+    <task xml:id="task-negate-conditional">
+      <statement>
+        <p>If we enjoy MATH, then we enjoy pizza.</p>
+      </statement>
+      <solution>
+        <p>
+          We enjoy MATH and we don't enjoy pizza.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <p>
+    These examples illustrate how negation interacts with <term>and</term>,
+    <term>or</term>, and <term>if, then </term>. This behavior is precisely described by De Morgan’s Laws.
+  </p>
+
+</subsection>
+
+<subsection xml:id="subsec-exercise">
+  <title>Exercise</title>
+
+
+  <question xml:id="q-negate-conditional-a">
+    <statement>
+      <p>
+        Find the negation of: "If you say “I do”, then you will be happy for the rest of your life."
+      </p>
+    </statement>
+    <solution>
+      <p>
+        You say “I do” and you will not be happy for the rest of your life.
+      </p>
+    </solution>
+  </question>
+
+  <question xml:id="q-negate-conditional-b">
+    <statement>
+      <p>
+      Find the negation of:  "I’ll be surprised if that is an authentic Persian rug."
+      </p>
+    </statement>
+    <solution>
+      <p>
+        I am not surprised and that is an authentic Persian rug.
+      </p>
+    </solution>
+  </question>
+
+<!-- Question 1 -->
+  <question xml:id="q-negation-joe">
+    <statement>
+      <p>
+     "Joe tells you that he is an actor and went to India last summer.
+        You know that he is lying. What compound statement about Joe is true?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Joe is not an actor or he did not go to India last summer.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 2 -->
+  <question xml:id="q-simplify-demorgan">
+    <statement>
+      <p>
+        Simplify the expression <m>\lnot[(\lnot p)\land q]</m> using De Morgan’s Laws
+        and the double negation.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        By De Morgan’s Law,
+        <m>\lnot[(\lnot p)\land q]\equiv \lnot(\lnot p)\lor \lnot q</m>.
+        Using double negation, this simplifies to
+        <m>p\lor \lnot q</m>.
+      </p>
+    </solution>
+  </question>
+<question xml:id="q-simplify-demorgan-2">
+  <statement>
+    <p>
+      Simplify the expression <m>\lnot(p\lor \lnot q)</m> using De Morgan’s Laws
+      and the double negation.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      By De Morgan’s Law,
+      <m>\lnot(p\lor \lnot q)\equiv \lnot p \land \lnot(\lnot q)</m>.
+      Using double negation, this simplifies to
+      <m>\lnot p \land q</m>.
+    </p>
+  </solution>
+</question>
+
+<question xml:id="q-simplify-demorgan-3">
+  <statement>
+    <p>
+      Simplify the expression <m>\lnot[(p\land q)\lor r]</m> using De Morgan’s Laws.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      By De Morgan’s Law,
+      <m>\lnot[(p\land q)\lor r]\equiv \lnot(p\land q)\land \lnot r</m>.
+      Applying De Morgan’s Law again,
+      <m>\lnot(p\land q)\equiv \lnot p \lor \lnot q</m>.
+      Thus, the expression simplifies to
+      <m>(\lnot p \lor \lnot q)\land \lnot r</m>.
+    </p>
+  </solution>
+</question>
+<question xml:id="q-simplify-conditional-demorgan">
+  <statement>
+    <p>
+      Simplify the expression <m>\lnot(p \to q)</m> using logical equivalence.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First rewrite the conditional using logical equivalence:
+      <m>p \to q \equiv \lnot p \lor q</m>.
+    </p>
+
+    <p>
+      Substituting, we obtain
+      <m>\lnot(\lnot p \lor q)</m>.
+      By De Morgan’s Law, this is equivalent to
+      <m>\lnot(\lnot p)\land \lnot q</m>.
+    </p>
+
+    <p>
+      Using double negation, the expression simplifies to
+      <m>p \land \lnot q</m>.
+    </p>
+  </solution>
+</question>
+
+  <!-- Question 3 -->
+  <question xml:id="q-negation-billionaire">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the statement:
+        “It is not true that both you are a billionaire and I am crazy.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        You are not a billionaire or I am not crazy.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4a -->
+  <question xml:id="q-negation-wise-fool">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “It is not true that both I am wise and you are a fool.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        I am not wise or you are not a fool.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4b -->
+  <question xml:id="q-negation-either-wise-fool">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “It is not true that either I am wise or you are a fool.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        I am not wise and you are not a fool.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4c -->
+  <question xml:id="q-negation-conditional-party">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “If you decide to go to the party, then I will go with you.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        If I do not go with you, then you did not decide to go to the party.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4d -->
+  <question xml:id="q-negation-marriage">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “If you say ‘I do’, then you will be happy for the rest of your life.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        If you are not happy for the rest of your life, then you did not say “I do.”
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4e -->
+  <question xml:id="q-negation-rug">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “I’ll be surprised if that is an authentic Persian rug.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        If that is an authentic Persian rug, then I will be surprised.
+      </p>
+    </solution>
+  </question>
+
+  <!-- Question 4f -->
+  <question xml:id="q-negation-peace">
+    <statement>
+      <p>
+        Use logical equivalence to rewrite the sentence:
+        “If wanting peace is wrong, I do not want to be right.”
+      </p>
+    </statement>
+    <solution>
+      <p>
+        If I want to be right, then wanting peace is not wrong.
+      </p>
+    </solution>
+  </question>
+
+</subsection>
+
+</section>
