@@ -13,7 +13,10 @@
 
   </ol>
 </objectives>
-
+<subsection>
+  <title>Truth Tables</title>
+  
+  
 <p>
   Each statement is True <term>T</term> or False <term>F</term>
   but not both. A truth table summarizes all possible truth values of a statement. 
@@ -348,7 +351,7 @@
   </ul>
 
   <example xml:id="example-only-if">
-    <title>Example</title>
+    <title>Rewrite in if, then</title>
     <p>
       The statement “You pass the exam only if you attend class” means that
       attending class is necessary for passing the exam.
@@ -392,14 +395,13 @@
 <exercise xml:id="ex-rewrite-if-then">
   <title>Rewriting Statements as Conditionals</title>
 
-  <statement>
-    <p>
-      Rewrite each of the following statements using the form <em>if … then …</em>.
-    </p>
-  </statement>
 
   <task xml:id="task-rewrite-if-then-a">
-    <statement>
+    <statement> 
+    <p>
+      Rewrite the following statement using the form <em>if … then …</em>.
+    </p>
+
       <p> Every picture tells a story.</p>
     </statement>
     <solution>
@@ -409,6 +411,9 @@
 
   <task xml:id="task-rewrite-if-then-b">
     <statement>
+          <p>
+      Rewrite the following statement using the form <em>if … then …</em>.
+    </p>
       <p> I can come with you only if I can find some time.</p>
     </statement>
     <solution>
@@ -500,6 +505,7 @@
     </p>
   </solution>
 </example>
+</subsection>
 <subsection xml:id="subsec-exercises-truth-tables">
   <title>Exercises</title>
 

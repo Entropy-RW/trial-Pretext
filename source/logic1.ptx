@@ -15,7 +15,10 @@
     </li>
   </ol>
 </objectives>
-
+<subsection>
+  <title>Statements and Connectives</title>
+  
+  
   <p>
     Symbolic logic studies some parts and relationships of natural language by representing
     them with symbols. The main ingredients of symbolic logic are <term>statements</term>
@@ -223,9 +226,9 @@
   </example>
 </warning>
 
-
+</subsection>
 <subsection xml:id="subsec-exercises">
-  <title>Exercise</title>
+  <title>Exercises</title>
 
   <p>
     In the following questions, translate between English statements and symbolic logic.
@@ -296,7 +299,7 @@
 
 
 <subsection xml:id="subsec-ex2">
-  <title>Exercise</title>
+  <title>Exercises</title>
   <p>
   Suppose that
   </p>

@@ -16,7 +16,10 @@
     </li>
   </ol>
 </objectives>
-
+<subsection>
+  <title>Logically Equivalent</title>
+  
+  
 <definition xml:id="def-lequivalence">
     <statement>
 <p>
@@ -115,8 +118,8 @@
     we conclude that <m>p \lor q \equiv q \lor p</m>.
   </p>
 </example>
-<exercise xml:id="ex-equivalence-implication-disjunction">
-  <title><me>p \to q \equiv (\lnot p)\lor q</me></title>
+<example xml:id="ex-equivalence-implication-disjunction">
+  <title><m>p \to q \equiv (\lnot p)\lor q</m></title>
 
   <statement>
     <p>
@@ -162,7 +165,103 @@
       Thus, <m>p \to q \equiv (\lnot p)\lor q</m>.
     </p>
   </solution>
-</exercise>
+</example>
+<example xml:id="ex-equivalence-contrapositive">
+  <title><m>p \to q \equiv \lnot q \to \lnot p</m></title>
+
+  <statement>
+    <p>
+      Show that <m>p \to q</m> and <m>\lnot q \to \lnot p</m> are logically equivalent.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      We compare the truth values of <m>p \to q</m> and <m>\lnot q \to \lnot p</m>
+      for all possible truth values of <m>p</m> and <m>q</m>.
+    </p>
+
+    <table>
+      <title>Truth Table Comparison</title>
+      <tabular halign="center">
+        <row header="yes" bottom="minor">
+          <cell><m>p</m></cell>
+          <cell><m>q</m></cell>
+          <cell><m>p \to q</m></cell>
+          <cell><m>\lnot q</m></cell>
+          <cell><m>\lnot p</m></cell>
+          <cell><m>\lnot q \to \lnot p</m></cell>
+        </row>
+
+        <row>
+          <cell>T</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell>
+        </row>
+        <row>
+          <cell>F</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The columns for <m>p \to q</m> and <m>\lnot q \to \lnot p</m> are identical,
+      so the two statements are logically equivalent.
+      Thus, <m>p \to q \equiv \lnot q \to \lnot p</m>.
+    </p>
+  </solution>
+</example>
+<remark xml:id="remark-contrapositive">
+  <title>The Contrapositive of a Conditional</title>
+
+  <p>
+    Given a conditional statement of the form <m>p \to q</m>, its
+    <term>contrapositive</term> is the statement <m>\lnot q \to \lnot p</m>.
+  </p>
+
+  <p>
+    A conditional statement and its contrapositive are always logically equivalent.
+    This equivalence was verified using a truth table in
+    <xref ref="ex-equivalence-contrapositive"/>.
+  </p>
+
+<p>
+  <xref ref="ex-equivalence-implication-disjunction"/> and
+  <xref ref="ex-equivalence-contrapositive"/> imply that a conditional statement
+  can be expressed in different but logically equivalent ways. For example, the statement
+</p>
+
+<p>
+  <em>If you study, then you will pass the exam.</em>
+</p>
+
+<p>
+  can be written equivalently as:
+</p>
+
+<ul>
+  <li>
+    Either you do not study, or you pass the exam
+    (see <xref ref="ex-equivalence-implication-disjunction"/>).
+  </li>
+  <li>
+    If you do not pass the exam, then you did not study
+    (see <xref ref="ex-equivalence-contrapositive"/>).
+  </li>
+</ul>
+
+
+  <p>
+    Each of these statements expresses the same logical relationship as the original
+    conditional.
+  </p>
+
+</remark>
+
 <exercise xml:id="ex-equivalence-conditional-reversal">
   <title>Logical Equivalence of Conditionals</title>
 
@@ -310,7 +409,7 @@
   </example>
 
 </remark>
-
+</subsection>
 <subsection xml:id="subsec-exercises-logical-equivalence">
   <title>Exercises</title>
 
@@ -494,7 +593,7 @@
 </subsection>
 
 <subsection xml:id="subsec-exercise">
-  <title>Exercise</title>
+  <title>Exercises</title>
 
 
   <question xml:id="q-negate-conditional-a">

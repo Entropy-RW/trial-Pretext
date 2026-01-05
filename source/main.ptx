@@ -9,7 +9,7 @@
     <latex-image-preamble>\usepackage{tikz}</latex-image-preamble>
   </docinfo>
 
-  <article xml:id="shorttitlelowercase">
+  <article xml:id="math103-logic">
  <title>
     <line>Logic</line>
   </title>
