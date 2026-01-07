@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Statements and Connectives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.7';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c2757fc695bc848c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="authorslastnamelowercase-ShortTitleCamelCase" class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math103-logic.html"><span class="title">Logic</span> <span class="subtitle">MATH 103 Supplementary Materials</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="math103-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="math103-logic.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\foo}{b^{ar}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-statements-connectives.html" class="internal"><span class="codenumber">1</span> <span class="title">Statements and Connectives</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-simple-statements" class="internal"><span class="codenumber">1.1</span> <span class="title">Simple Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-connectives" class="internal"><span class="codenumber">1.2</span> <span class="title">Connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-negation" class="internal"><span class="codenumber">1.3</span> <span class="title">Negation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-connectives-compound-summary" class="internal"><span class="codenumber">1.4</span> <span class="title">Connectives and Compound Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-parentheses" class="internal"><span class="codenumber">1.5</span> <span class="title">Parentheses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-statements-connectives.html#subsec-exercises-01" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li></ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-statements-connectives"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statements and Connectives</span>
+</h2>
+<div class="para" id="sec-statements-connectives-2">Symbolic logic studies some parts and relationships of natural languages by representing them with symbols. The main ingredients of symbolic logic are <dfn class="terminology">statements</dfn> and <dfn class="terminology">connectives</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-statements-connectives-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-statement"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-statement-1-1">A <dfn class="terminology">statement</dfn> is an assertion that can be either true or false.<div class="autopermalink" data-description="Paragraph"><a href="#def-statement-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1"><a href="#def-statement" title="Copy heading and permalink for Definition 1.1" aria-label="Copy heading and permalink for Definition 1.1">🔗</a></div></article><details id="ex-statements-basic" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statements.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="ex-statements-basic-2">The following sentences are statements:<div class="autopermalink" data-description="Paragraph"><a href="#ex-statements-basic-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ex-statements-basic-3">
+<li id="ex-statements-basic-3-1">
+<div class="para" id="ex-statements-basic-3-1-1">
+<em class="emphasis">It is sunny today.</em><div class="autopermalink" data-description="Paragraph"><a href="#ex-statements-basic-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-statements-basic-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-statements-basic-3-2">
+<div class="para" id="ex-statements-basic-3-2-1">
+<em class="emphasis">Ms. W will have a broader audience next month.</em><div class="autopermalink" data-description="Paragraph"><a href="#ex-statements-basic-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-statements-basic-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-statements-basic-3-3">
+<div class="para" id="ex-statements-basic-3-3-1">
+<em class="emphasis">I did not join the club.</em><div class="autopermalink" data-description="Paragraph"><a href="#ex-statements-basic-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-statements-basic-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Example 1.2: Statements"><a href="#ex-statements-basic" title="Copy heading and permalink for Example 1.2: Statements" aria-label="Copy heading and permalink for Example 1.2: Statements">🔗</a></div></article></details><details id="ex-not-statements-basic" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Non-Statements.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="ex-not-statements-basic-2">Questions (e.g. <em class="emphasis">How’s the weather?</em>), exclamations (e.g. <em class="emphasis">Cool!</em>), commands (e.g. <em class="emphasis">Run!</em>), and incomplete sentences (e.g. <em class="emphasis">If I could …</em>) are not statements.<div class="autopermalink" data-description="Paragraph"><a href="#ex-not-statements-basic-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1.3: Non-Statements"><a href="#ex-not-statements-basic" title="Copy heading and permalink for Example 1.3: Non-Statements" aria-label="Copy heading and permalink for Example 1.3: Non-Statements">🔗</a></div></article></details><div class="para" id="sec-statements-connectives-6">
+<em class="emphasis">More Examples.</em> Write three statements you often use, and three examples of sentences that are not statements.<div class="autopermalink" data-description="Paragraph"><a href="#sec-statements-connectives-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="subsec-simple-statements"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Simple Statements</span>
+</h3>
+<div class="para" id="subsec-simple-statements-2">
+<dfn class="terminology">Simple statements</dfn> do not contain other statements as their parts. We represent simple statements using lowercase letters <span class="process-math">\(p, q, r, \ldots\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-simple-statements-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-simple-symbols" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Symbolic Representation of Simple Statements.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-simple-symbols-2">For example: <span class="process-math">\(s\)</span> = <em class="emphasis">Your bicycle is slick</em> and <span class="process-math">\(c\)</span> = <em class="emphasis">Its color is yellow</em>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-simple-symbols-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1.4: Symbolic Representation of Simple Statements"><a href="#ex-simple-symbols" title="Copy heading and permalink for Example 1.4: Symbolic Representation of Simple Statements" aria-label="Copy heading and permalink for Example 1.4: Symbolic Representation of Simple Statements">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 1.1: Simple Statements"><a href="#subsec-simple-statements" title="Copy heading and permalink for Subsection 1.1: Simple Statements" aria-label="Copy heading and permalink for Subsection 1.1: Simple Statements">🔗</a></div></section><section class="subsection" id="subsec-connectives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connectives</span>
+</h3>
+<article class="definition definition-like" id="def-connectives"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-connectives-1-1">
+<dfn class="terminology">Connectives</dfn> join simple statements into more complex statements, called <dfn class="terminology">compound statements</dfn>. The most common connectives and their symbols are:<div class="autopermalink" data-description="Paragraph"><a href="#def-connectives-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ul class="disc" id="def-connectives-1-2">
+<li id="def-connectives-1-2-1">
+<div class="para" id="def-connectives-1-2-1-1">Conjunction (and, but): <span class="process-math">\(\wedge\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-connectives-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#def-connectives-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="def-connectives-1-2-2">
+<div class="para" id="def-connectives-1-2-2-1">Disjunction (or): <span class="process-math">\(\vee\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-connectives-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#def-connectives-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="def-connectives-1-2-3">
+<div class="para" id="def-connectives-1-2-3-1">Conditional (if … then): <span class="process-math">\(\rightarrow\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-connectives-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#def-connectives-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Definition 1.5"><a href="#def-connectives" title="Copy heading and permalink for Definition 1.5" aria-label="Copy heading and permalink for Definition 1.5">🔗</a></div></article><details id="ex-connectives-examples" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Examples.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-connectives-examples-2">
+<span class="process-math">\(s \wedge c\)</span> = <em class="emphasis">Your bicycle is slick and its color is yellow.</em><div class="autopermalink" data-description="Paragraph"><a href="#ex-connectives-examples-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-connectives-examples-3">
+<span class="process-math">\(c \rightarrow s\)</span> = <em class="emphasis">If its color is yellow then your bicycle is slick.</em><div class="autopermalink" data-description="Paragraph"><a href="#ex-connectives-examples-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1.6: Examples"><a href="#ex-connectives-examples" title="Copy heading and permalink for Example 1.6: Examples" aria-label="Copy heading and permalink for Example 1.6: Examples">🔗</a></div></article></details><div class="para" id="subsec-connectives-4">
+<em class="emphasis">More Examples.</em> Write three compound statements and circle the connective(s) in each.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-connectives-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2: Connectives"><a href="#subsec-connectives" title="Copy heading and permalink for Subsection 1.2: Connectives" aria-label="Copy heading and permalink for Subsection 1.2: Connectives">🔗</a></div></section><section class="subsection" id="subsec-negation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negation</span>
+</h3>
+<article class="definition definition-like" id="def-negation"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-negation-1-1">The “operation” <dfn class="terminology">not</dfn>, symbolically written <span class="process-math">\(\neg\text{,}\)</span> turns a statement into its negation. (Negation is not a connective.)<div class="autopermalink" data-description="Paragraph"><a href="#def-negation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.7"><a href="#def-negation" title="Copy heading and permalink for Definition 1.7" aria-label="Copy heading and permalink for Definition 1.7">🔗</a></div></article><div class="displaymath process-math" id="subsec-negation-3">
+\begin{equation*}
+\begin{aligned}
+&amp; p \qquad &amp; p\ \text{is true}\qquad \mathrm{(assertion)}\\
+\neg &amp; p \qquad &amp; p\ \text{is false}\qquad \mathrm{(negation)}
+\end{aligned}
+\end{equation*}
+</div>
+<details id="ex-negation-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negation Example.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-negation-example-2">The negation of <span class="process-math">\(s\)</span> = <em class="emphasis">Your bicycle is slick</em> is <span class="process-math">\(\neg s\)</span> = <em class="emphasis">Your bicycle is not slick</em>.<div class="autopermalink" data-description="Paragraph"><a href="#ex-negation-example-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 1.8: Negation Example"><a href="#ex-negation-example" title="Copy heading and permalink for Example 1.8: Negation Example" aria-label="Copy heading and permalink for Example 1.8: Negation Example">🔗</a></div></article></details><article class="remark remark-like" id="remark-parentheses-dictionary"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Remark.</span>
+</h4>
+<div class="para" id="remark-parentheses-dictionary-2">The symbols representing statements, the connectives, and negation form our dictionary. Parentheses are used for punctuation. Our goal is to convert statements and logical arguments into symbols to better understand structure, truth values, and validity.<div class="autopermalink" data-description="Paragraph"><a href="#remark-parentheses-dictionary-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 1.9: Remark"><a href="#remark-parentheses-dictionary" title="Copy heading and permalink for Remark 1.9: Remark" aria-label="Copy heading and permalink for Remark 1.9: Remark">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.3: Negation"><a href="#subsec-negation" title="Copy heading and permalink for Subsection 1.3: Negation" aria-label="Copy heading and permalink for Subsection 1.3: Negation">🔗</a></div></section><section class="subsection" id="subsec-connectives-compound-summary"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connectives and Compound Statements</span>
+</h3>
+<article class="note remark-like" id="note-or-inclusive"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="note-or-inclusive-1">The connective <dfn class="terminology">or</dfn> in logic has an <dfn class="terminology">inclusive</dfn> meaning. For example, “Bob will play tennis or go to the movies” means Bob may play tennis, or go to the movies, or do both.<div class="autopermalink" data-description="Paragraph"><a href="#note-or-inclusive-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 1.10"><a href="#note-or-inclusive" title="Copy heading and permalink for Note 1.10" aria-label="Copy heading and permalink for Note 1.10">🔗</a></div></article><article class="note remark-like" id="note-but-and"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="note-but-and-1">The connective <dfn class="terminology">but</dfn> plays the same logical role as <dfn class="terminology">and</dfn> and uses the same symbol <span class="process-math">\(\wedge\text{.}\)</span> For example, “Your bicycle is slick, but its color is not yellow” is <span class="process-math">\(s \wedge \neg c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#note-but-and-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 1.11"><a href="#note-but-and" title="Copy heading and permalink for Note 1.11" aria-label="Copy heading and permalink for Note 1.11">🔗</a></div></article><div class="para" id="subsec-connectives-compound-summary-4">
+<em class="emphasis">More Examples.</em> When your friend says “We will go to the library or go to a coffee place”:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-connectives-compound-summary-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-connectives-compound-summary-5">
+<li id="subsec-connectives-compound-summary-5-1">
+<div class="para" id="subsec-connectives-compound-summary-5-1-1">What does your friend usually mean?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-connectives-compound-summary-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-connectives-compound-summary-5-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-connectives-compound-summary-5-2">
+<div class="para" id="subsec-connectives-compound-summary-5-2-1">How do we interpret it in logic?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-connectives-compound-summary-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-connectives-compound-summary-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-connectives-compound-summary-5-3">
+<div class="para" id="subsec-connectives-compound-summary-5-3-1">Rephrase it to make intentions completely clear.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-connectives-compound-summary-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-connectives-compound-summary-5-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection 1.4: Connectives and Compound Statements"><a href="#subsec-connectives-compound-summary" title="Copy heading and permalink for Subsection 1.4: Connectives and Compound Statements" aria-label="Copy heading and permalink for Subsection 1.4: Connectives and Compound Statements">🔗</a></div></section><section class="subsection" id="subsec-parentheses"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parentheses</span>
+</h3>
+<div class="para" id="subsec-parentheses-2">The use of parentheses is essential. Consider: <em class="emphasis">If I search for webpages containing “termites” or “cattle”, then I will search for webpages containing “global warming”.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-parentheses-3">Define the simple statements:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-parentheses-4">
+<li id="subsec-parentheses-4-1">
+<div class="para" id="subsec-parentheses-4-1-1">
+<span class="process-math">\(t\text{:}\)</span> I search for webpages containing “termites”.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-parentheses-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-parentheses-4-2">
+<div class="para" id="subsec-parentheses-4-2-1">
+<span class="process-math">\(c\text{:}\)</span> I search for webpages containing “cattle”.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-parentheses-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-parentheses-4-3">
+<div class="para" id="subsec-parentheses-4-3-1">
+<span class="process-math">\(g\text{:}\)</span> I search for webpages containing “global warming”.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-parentheses-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="subsec-parentheses-5">The symbolic form is:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="subsec-parentheses-6">
+\begin{equation*}
+(t \vee c) \rightarrow g.
+\end{equation*}
+</div>
+<article class="warning remark-like" id="warn-parentheses-ambiguity"><h4 class="heading">
+<span class="type">Warning</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="warn-parentheses-ambiguity-1">Without parentheses, <span class="process-math">\(t \vee c \rightarrow g\)</span> is ambiguous and can represent a different meaning.<div class="autopermalink" data-description="Paragraph"><a href="#warn-parentheses-ambiguity-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Warning 1.12"><a href="#warn-parentheses-ambiguity" title="Copy heading and permalink for Warning 1.12" aria-label="Copy heading and permalink for Warning 1.12">🔗</a></div></article><div class="para" id="subsec-parentheses-8">
+<em class="emphasis">More Examples.</em> Compare <span class="process-math">\((t\rightarrow c)\wedge g\)</span> and <span class="process-math">\(t\rightarrow c \wedge g\)</span> by translating each into English. Which one is ambiguous? Remove ambiguity using parentheses.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-parentheses-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.5: Parentheses"><a href="#subsec-parentheses" title="Copy heading and permalink for Subsection 1.5: Parentheses" aria-label="Copy heading and permalink for Subsection 1.5: Parentheses">🔗</a></div></section><section class="subsection" id="subsec-exercises-01"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<details id="q-basics-1" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-basics-1-1-1">Convert the following compound statements into symbolic statements by assigning symbols to each simple statement and using appropriate connectives.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="decimal" id="q-basics-1-1-2">
+<li id="q-basics-1-1-2-1">
+<div class="para" id="q-basics-1-1-2-1-1">Jim is a lawyer, yet he is not a crook.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#q-basics-1-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-2">
+<div class="para" id="q-basics-1-1-2-2-1">Although our professor is young, he is knowledgeable.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#q-basics-1-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-3">
+<div class="para" id="q-basics-1-1-2-3-1">My favorite dish has lots of anchovies or is not spicy and also it comes in a large portion.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#q-basics-1-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-4">
+<div class="para" id="q-basics-1-1-2-4-1">My favorite dish has lots of anchovies and it comes in a large portion or it is spicy and it also comes in a large portion.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#q-basics-1-1-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-5">
+<div class="para" id="q-basics-1-1-2-5-1">If you do not attend class, then you ask a classmate for the notes or you learn on your own.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#q-basics-1-1-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-6">
+<div class="para" id="q-basics-1-1-2-6-1">I am doing a web search for pages containing “global warming”, but not for pages containing both “termites” and “cattle”.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#q-basics-1-1-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="q-basics-1-1-2-7">
+<div class="para" id="q-basics-1-1-2-7-1">I am doing a web search for pages containing “global warming”, but not for pages containing “termites” and not for pages containing “cattle”.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-1-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#q-basics-1-1-2-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+</ol>
+<div class="solutions"><details id="q-basics-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-basics-1-2-1">Selected solutions (from the source’s “Solutions to Selected Exercises”):<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="q-basics-1-2-2">
+<li id="q-basics-1-2-2-1">
+<div class="para" id="q-basics-1-2-2-1-1">(a) Let <span class="process-math">\(j\)</span> = “Jim is a lawyer”, <span class="process-math">\(c\)</span> = “Jim is a crook”. Then <span class="process-math">\(j \wedge \neg c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-1-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="q-basics-1-2-2-2">
+<div class="para" id="q-basics-1-2-2-2-1">(c) Let <span class="process-math">\(a\)</span> = “my favorite dish has lots of anchovies”, <span class="process-math">\(s\)</span> = “my favorite dish is spicy”, <span class="process-math">\(l\)</span> = “my favorite dish comes in a large portion”. Then <span class="process-math">\((a \vee \neg s)\wedge l\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-1-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="q-basics-1-2-2-3">
+<div class="para" id="q-basics-1-2-2-3-1">(e) Let <span class="process-math">\(a\)</span> = “you attend class”, <span class="process-math">\(r\)</span> = “you read the book”, <span class="process-math">\(p\)</span> = “you pass the exam”. Then <span class="process-math">\((\neg a)\rightarrow (r \vee \neg p)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-1-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="q-basics-1-2-2-4">
+<div class="para" id="q-basics-1-2-2-4-1">(g) Let <span class="process-math">\(g\)</span> = “search ‘global warming’”, <span class="process-math">\(t\)</span> = “search ‘termites’”, <span class="process-math">\(c\)</span> = “search ‘cattle’”. Then <span class="process-math">\(g \wedge (\neg t)\wedge (\neg c)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-1-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-1-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Solution 1.13.1"><a href="#q-basics-1-2" title="Copy heading and permalink for Solution 1.13.1" aria-label="Copy heading and permalink for Solution 1.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 1.13"><a href="#q-basics-1" title="Copy heading and permalink for Question 1.13" aria-label="Copy heading and permalink for Question 1.13">🔗</a></div></article></details><details id="q-basics-2" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Question</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="question example-like knowl__content"><div class="para" id="q-basics-2-1-1">Convert the following symbolic statements into words, where <span class="process-math">\(s\)</span> = “The sunroof is extra”, <span class="process-math">\(r\)</span> = “The radial tires are included”, <span class="process-math">\(w\)</span> = “Power windows are optional”.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="decimal" id="q-basics-2-1-2">
+<li id="q-basics-2-1-2-1">
+<div class="para" id="q-basics-2-1-2-1-1">
+<span class="process-math">\(\displaystyle (s \wedge w) \rightarrow r\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#q-basics-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="q-basics-2-1-2-2">
+<div class="para" id="q-basics-2-1-2-2-1">
+<span class="process-math">\(\displaystyle r \wedge [s \vee (\neg w)]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#q-basics-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="q-basics-2-1-2-3">
+<div class="para" id="q-basics-2-1-2-3-1">
+<span class="process-math">\(\displaystyle (\neg r)\rightarrow [(\neg s)\vee (\neg w)]\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#q-basics-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="q-basics-2-1-2-4">
+<div class="para" id="q-basics-2-1-2-4-1">
+<span class="process-math">\(\displaystyle \neg(w \wedge s)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#q-basics-2-1-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="solutions"><details id="q-basics-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="q-basics-2-2-1">Selected solutions (from the source’s “Solutions to Selected Exercises”):<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="q-basics-2-2-2">
+<li id="q-basics-2-2-2-1">
+<div class="para" id="q-basics-2-2-2-1-1">(a) If the sunroof is extra and the power windows are optional, then the radial tires are included.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-2-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="q-basics-2-2-2-2">
+<div class="para" id="q-basics-2-2-2-2-1">(c) If the radial tires are not included, then either the sunroof is not extra or the power windows are not optional.<div class="autopermalink" data-description="Paragraph"><a href="#q-basics-2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#q-basics-2-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Solution 1.14.1"><a href="#q-basics-2-2" title="Copy heading and permalink for Solution 1.14.1" aria-label="Copy heading and permalink for Solution 1.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Question 1.14"><a href="#q-basics-2" title="Copy heading and permalink for Question 1.14" aria-label="Copy heading and permalink for Question 1.14">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 1.6: Exercises"><a href="#subsec-exercises-01" title="Copy heading and permalink for Subsection 1.6: Exercises" aria-label="Copy heading and permalink for Subsection 1.6: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 1: Statements and Connectives"><a href="#sec-statements-connectives" title="Copy heading and permalink for Section 1: Statements and Connectives" aria-label="Copy heading and permalink for Section 1: Statements and Connectives">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="math103-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
