@@ -1,0 +1,251 @@
+<section xml:id="sec-statements-connectives">
+  <title>Statements and Connectives</title>
+
+  <p>
+    Symbolic logic studies some parts and relationships of natural languages by representing them with symbols.
+    The main ingredients of symbolic logic are <term>statements</term> and <term>connectives</term>.
+  </p>
+
+  <definition xml:id="def-statement">
+    <statement>
+      <p>
+        A <term>statement</term> is an assertion that can be either true or false.
+      </p>
+    </statement>
+  </definition>
+
+  <example xml:id="ex-statements-basic">
+    <title>Statements</title>
+    <p>The following sentences are statements:</p>
+    <ul>
+      <li><p><em>It is sunny today.</em></p></li>
+      <li><p><em>Ms. W will have a broader audience next month.</em></p></li>
+      <li><p><em>I did not join the club.</em></p></li>
+    </ul>
+  </example>
+
+  <example xml:id="ex-not-statements-basic">
+    <title>Non-Statements</title>
+    <p>
+      Questions (e.g. <em>How’s the weather?</em>), exclamations (e.g. <em>Cool!</em>),
+      commands (e.g. <em>Run!</em>), and incomplete sentences (e.g. <em>If I could …</em>)
+      are not statements.
+    </p>
+  </example>
+
+  <p><em>More Examples.</em> Write three statements you often use, and three examples of sentences that are not statements.</p>
+
+  <subsection xml:id="subsec-simple-statements">
+    <title>Simple Statements</title>
+
+    <p>
+      <term>Simple statements</term> do not contain other statements as their parts.
+      We represent simple statements using lowercase letters <m>p, q, r, \ldots</m>.
+    </p>
+
+    <example xml:id="ex-simple-symbols">
+      <title>Symbolic Representation of Simple Statements</title>
+      <p>
+        For example:
+        <m>s</m> = <em>Your bicycle is slick</em> and
+        <m>c</m> = <em>Its color is yellow</em>.
+      </p>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsec-connectives">
+    <title>Connectives</title>
+
+    <definition xml:id="def-connectives">
+      <statement>
+        <p>
+          <term>Connectives</term> join simple statements into more complex statements,
+          called <term>compound statements</term>. The most common connectives and their symbols are:
+        </p>
+        <ul>
+          <li><p>Conjunction (and, but): <m>\wedge</m></p></li>
+          <li><p>Disjunction (or): <m>\vee</m></p></li>
+          <li><p>Conditional (if … then): <m>\rightarrow</m></p></li>
+        </ul>
+      </statement>
+    </definition>
+
+    <example xml:id="ex-connectives-examples">
+      <title>Examples</title>
+      <p><m>s \wedge c</m> = <em>Your bicycle is slick and its color is yellow.</em></p>
+      <p><m>c \rightarrow s</m> = <em>If its color is yellow then your bicycle is slick.</em></p>
+    </example>
+
+    <p><em>More Examples.</em> Write three compound statements and circle the connective(s) in each.</p>
+  </subsection>
+
+  <subsection xml:id="subsec-negation">
+    <title>Negation</title>
+
+    <definition xml:id="def-negation">
+      <statement>
+        <p>
+          The “operation” <term>not</term>, symbolically written <m>\neg</m>, turns a statement into its negation.
+          (Negation is not a connective.)
+        </p>
+      </statement>
+    </definition>
+
+    <me>
+\begin{aligned}
+&amp; p \qquad &amp; p\ \text{is true}\qquad \mathrm{(assertion)}\\
+\neg &amp; p \qquad &amp; p\ \text{is false}\qquad \mathrm{(negation)}
+\end{aligned}
+    </me>
+
+    <example xml:id="ex-negation-example">
+      <title>Negation Example</title>
+      <p>
+        The negation of <m>s</m> = <em>Your bicycle is slick</em> is
+        <m>\neg s</m> = <em>Your bicycle is not slick</em>.
+      </p>
+    </example>
+
+    <remark xml:id="remark-parentheses-dictionary">
+      <title>Remark</title>
+      <p>
+        The symbols representing statements, the connectives, and negation form our dictionary.
+        Parentheses are used for punctuation. Our goal is to convert statements and logical arguments into symbols
+        to better understand structure, truth values, and validity.
+      </p>
+    </remark>
+  </subsection>
+
+  <subsection xml:id="subsec-connectives-compound-summary">
+    <title>Connectives and Compound Statements</title>
+
+    <note xml:id="note-or-inclusive">
+      <p>
+        The connective <term>or</term> in logic has an <term>inclusive</term> meaning.
+        For example, “Bob will play tennis or go to the movies” means Bob may play tennis,
+        or go to the movies, or do both.
+      </p>
+    </note>
+
+    <note xml:id="note-but-and">
+      <p>
+        The connective <term>but</term> plays the same logical role as <term>and</term> and uses the same symbol <m>\wedge</m>.
+        For example, “Your bicycle is slick, but its color is not yellow” is <m>s \wedge \neg c</m>.
+      </p>
+    </note>
+
+    <p><em>More Examples.</em> When your friend says “We will go to the library or go to a coffee place”:</p>
+    <ol>
+      <li><p>What does your friend usually mean?</p></li>
+      <li><p>How do we interpret it in logic?</p></li>
+      <li><p>Rephrase it to make intentions completely clear.</p></li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="subsec-parentheses">
+    <title>Parentheses</title>
+
+    <p>
+      The use of parentheses is essential. Consider:
+      <em>If I search for webpages containing “termites” or “cattle”, then I will search for webpages containing “global warming”.</em>
+    </p>
+
+    <p>Define the simple statements:</p>
+    <ul>
+      <li><p><m>t</m>: I search for webpages containing “termites”.</p></li>
+      <li><p><m>c</m>: I search for webpages containing “cattle”.</p></li>
+      <li><p><m>g</m>: I search for webpages containing “global warming”.</p></li>
+    </ul>
+
+    <p>The symbolic form is:</p>
+    <me>(t \vee c) \rightarrow g.</me>
+
+    <warning xml:id="warn-parentheses-ambiguity">
+      <p>
+        Without parentheses, <m>t \vee c \rightarrow g</m> is ambiguous and can represent a different meaning.
+      </p>
+    </warning>
+
+    <p>
+      <em>More Examples.</em> Compare <m>(t\rightarrow c)\wedge g</m> and <m>t\rightarrow c \wedge g</m> by translating
+      each into English. Which one is ambiguous? Remove ambiguity using parentheses.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-exercises-01">
+    <title>Exercises</title>
+
+    <question xml:id="q-basics-1">
+      <statement>
+        <p>
+          Convert the following compound statements into symbolic statements by assigning symbols to each simple statement
+          and using appropriate connectives.
+        </p>
+        <ol>
+          <li><p>Jim is a lawyer, yet he is not a crook.</p></li>
+          <li><p>Although our professor is young, he is knowledgeable.</p></li>
+          <li><p>My favorite dish has lots of anchovies or is not spicy and also it comes in a large portion.</p></li>
+          <li><p>My favorite dish has lots of anchovies and it comes in a large portion or it is spicy and it also comes in a large portion.</p></li>
+          <li><p>If you do not attend class, then you ask a classmate for the notes or you learn on your own.</p></li>
+          <li><p>I am doing a web search for pages containing “global warming”, but not for pages containing both “termites” and “cattle”.</p></li>
+          <li><p>I am doing a web search for pages containing “global warming”, but not for pages containing “termites” and not for pages containing “cattle”.</p></li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          Selected solutions (from the source’s “Solutions to Selected Exercises”):
+        </p>
+        <ul>
+          <li>
+            <p>
+              (a) Let <m>j</m> = “Jim is a lawyer”, <m>c</m> = “Jim is a crook”. Then <m>j \wedge \neg c</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              (c) Let <m>a</m> = “my favorite dish has lots of anchovies”, <m>s</m> = “my favorite dish is spicy”,
+              <m>l</m> = “my favorite dish comes in a large portion”. Then <m>(a \vee \neg s)\wedge l</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              (e) Let <m>a</m> = “you attend class”, <m>r</m> = “you read the book”, <m>p</m> = “you pass the exam”.
+              Then <m>(\neg a)\rightarrow (r \vee \neg p)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              (g) Let <m>g</m> = “search ‘global warming’”, <m>t</m> = “search ‘termites’”, <m>c</m> = “search ‘cattle’”.
+              Then <m>g \wedge (\neg t)\wedge (\neg c)</m>.
+            </p>
+          </li>
+        </ul>
+      </solution>
+    </question>
+
+    <question xml:id="q-basics-2">
+      <statement>
+        <p>
+          Convert the following symbolic statements into words, where
+          <m>s</m> = “The sunroof is extra”, <m>r</m> = “The radial tires are included”,
+          <m>w</m> = “Power windows are optional”.
+        </p>
+        <ol>
+          <li><p><m>(s \wedge w) \rightarrow r</m></p></li>
+          <li><p><m>r \wedge [s \vee (\neg w)]</m></p></li>
+          <li><p><m>(\neg r)\rightarrow [(\neg s)\vee (\neg w)]</m></p></li>
+          <li><p><m>\neg(w \wedge s)</m></p></li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          Selected solutions (from the source’s “Solutions to Selected Exercises”):
+        </p>
+        <ul>
+          <li><p>(a) If the sunroof is extra and the power windows are optional, then the radial tires are included.</p></li>
+          <li><p>(c) If the radial tires are not included, then either the sunroof is not extra or the power windows are not optional.</p></li>
+        </ul>
+      </solution>
+    </question>
+  </subsection>
+</section>
